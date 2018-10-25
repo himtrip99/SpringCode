@@ -7,7 +7,10 @@ public class InventoryResponse implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -7175677530782172L;
+	/**
+	 * 
+	 */
 	private String productId;
 	private int returnCode;
 	private String comment;
