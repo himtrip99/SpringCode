@@ -26,7 +26,7 @@ public class SampleEmailApplication {
 		CustomerInfo customerInfo = new CustomerInfo();
 		customerInfo.setName("Apple Inc.");
 		customerInfo.setAddress("WallStreet");
-		customerInfo.setEmail("nayana.kgaonkar@gmail.com");
+		customerInfo.setEmail("test@gmail.com");
 		order.setCustomerInfo(customerInfo);
 		return order;
 	}
