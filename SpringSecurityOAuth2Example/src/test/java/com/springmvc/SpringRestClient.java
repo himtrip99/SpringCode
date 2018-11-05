@@ -56,7 +56,15 @@ public class SpringRestClient {
         RestTemplate restTemplate = new RestTemplate(); 
         
         HttpEntity<String> request = new HttpEntity<String>(getHeadersWithClientCredentials());
-        ResponseEntity<Object> response = restTemplate.exchange(AUTH_SERVER_URI+QPM_PASSWORD_GRANT, HttpMethod.POST, request, Object.class);
+        ResponseEntity<Object> response = null;
+        try {
+        System.out.println("Obtaing access token");
+        response = restTemplate.exchange(AUTH_SERVER_URI+QPM_PASSWORD_GRANT, HttpMethod.POST, request, Object.class);
+        System.out.println("Obtained access token");
+        }
+        catch(Exception e) {
+        	e.printStackTrace();
+        }
         LinkedHashMap<String, Object> map = (LinkedHashMap<String, Object>)response.getBody();
         AuthTokenInfo tokenInfo = null;
         
