@@ -1,0 +1,7 @@
+---
+applications:
+- name: SpringBootRestApi
+  path: target/SpringBootRestApiExample-1.0.0.jar
+  domain: cfapps.io
+  memory: 128m
+  instances: 1

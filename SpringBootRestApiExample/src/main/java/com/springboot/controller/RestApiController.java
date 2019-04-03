@@ -20,7 +20,7 @@ import com.springboot.service.UserService;
 import com.springboot.util.CustomErrorType;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/service")
 public class RestApiController {
 
 	public static final Logger logger = LoggerFactory.getLogger(RestApiController.class);
